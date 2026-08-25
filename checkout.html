@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - ShopEasy</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="brand">
+        🛒 ShopEasy
+    </div>
+
+    <nav id="nav"></nav>
+
+</header>
+
+
+<main class="form-page">
+
+    <div class="form-card wide">
+
+        <h2>
+            💳 Checkout
+        </h2>
+
+
+        <div
+            id="checkoutTotal"
+            class="checkout-total">
+
+        </div>
+
+
+        <form id="checkoutForm">
+
+            <input
+                id="customerName"
+                placeholder="Full Name"
+                required
+            >
+
+
+            <input
+                id="mobile"
+                placeholder="Mobile Number"
+                pattern="[0-9]{10}"
+                required
+            >
+
+
+            <textarea
+                id="address"
+                placeholder="Delivery Address"
+                required>
+            </textarea>
+
+
+            <select id="paymentMethod">
+
+                <option>
+                    Cash on Delivery
+                </option>
+
+                <option>
+                    UPI
+                </option>
+
+                <option>
+                    Credit/Debit Card
+                </option>
+
+            </select>
+
+
+            <button
+                type="submit"
+                class="btn full">
+
+                Place Order
+
+            </button>
+
+        </form>
+
+
+        <p
+            id="checkoutMessage"
+            class="message">
+
+        </p>
+
+    </div>
+
+</main>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
